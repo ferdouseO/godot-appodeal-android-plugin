@@ -2,7 +2,7 @@ extends Node
 
 
 
-const APPODEAL_APP_KEY : String = "373eb28ee3a6df28440cf8a5eee7f4d3b626b9b6a05b690c"
+const APPODEAL_APP_KEY : String = ""
 const REWARDED_AD_ID : String = ""
 const INTERSTITIAL_AD_ID : String = ""
 const BANNER_AD_ID : String = ""
