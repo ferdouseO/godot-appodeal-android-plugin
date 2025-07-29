@@ -50,7 +50,12 @@ You can use the `addons/appodeal/appodeal_ads.gd` script as a Singletone/Global 
 ## GDPR/User Concent
 
 1. If you use Google UMP for GDPR, Add `implementation 'com.google.android.ump:user-messaging-platform:2.1.0'` in the dependency section of your "project > android > build > build.gradle" file.
-<img height=100 src="screenshots/ss-admob-ump.png">
+
+
+# 📦Debug
+1. Connect an android device and run the example scene.
+2. The example app also has a debug window that logs everything
+<img height=100 src="screenshots/ss-appodeal-bnr.png">
 
 
 

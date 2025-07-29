@@ -146,11 +146,11 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxFlat_i7y6i")
-text = "Congratulations! You have successfully integrated Appodeal"
+text = "Congratulations! You have successfully integrated Appodeal.
+Tap here if you want support my work"
 horizontal_alignment = 1
 
 [node name="CoffeeBtn" type="Button" parent="CenterContainer/VBoxContainer/Congratulations"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
