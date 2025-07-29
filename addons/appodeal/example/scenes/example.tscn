@@ -1,0 +1,428 @@
+[gd_scene load_steps=17 format=3 uid="uid://db1a0rrul6x05"]
+
+[ext_resource type="Script" path="res://addons/appodeal/example/scenes/example.gd" id="1_aa657"]
+[ext_resource type="Texture2D" uid="uid://cqk2kawiyywjo" path="res://addons/appodeal/assets/appodeal_logo.jpg" id="2_i0wp1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eq04a"]
+content_margin_left = 100.0
+content_margin_top = 100.0
+content_margin_right = 100.0
+content_margin_bottom = 100.0
+bg_color = Color(0.184174, 0.295991, 0.332031, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lew3j"]
+bg_color = Color(0.976471, 0.976471, 0.976471, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i7y6i"]
+content_margin_left = 6.0
+content_margin_top = 6.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+bg_color = Color(0.27832, 0.625, 0.381241, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.195313, 1, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j2mse"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i843b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3k4k5"]
+bg_color = Color(0.259918, 0.398438, 0.395191, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_io0ut"]
+content_margin_left = 10.0
+content_margin_top = 4.0
+content_margin_right = 10.0
+content_margin_bottom = 4.0
+bg_color = Color(0.306488, 0.464867, 0.472656, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yq4rn"]
+content_margin_left = 6.0
+content_margin_right = 6.0
+bg_color = Color(0.152941, 0.152941, 0.152941, 0.517647)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ggbka"]
+content_margin_left = 6.0
+content_margin_right = 6.0
+bg_color = Color(0.157013, 0.2558, 0.382813, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uw5p7"]
+content_margin_left = 6.0
+content_margin_right = 6.0
+bg_color = Color(0.228882, 0.385094, 0.585938, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ktmog"]
+bg_color = Color(0.519531, 0.519531, 0.519531, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ltix2"]
+content_margin_left = 6.0
+content_margin_right = 6.0
+bg_color = Color(0.320313, 1, 0.362793, 1)
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_ceqyv"]
+resource_name = "banner_pos"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pbjpc"]
+content_margin_left = 6.0
+content_margin_right = 6.0
+bg_color = Color(0.320313, 1, 0.362793, 1)
+
+[node name="Example" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aa657")
+
+[node name="CenterContainer" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_eq04a")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -476.0
+offset_top = -224.0
+offset_right = 476.0
+offset_bottom = 224.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="ApdIcon" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+texture = ExtResource("2_i0wp1")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Title" type="Label" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(360, 48)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.909804, 0.247059, 0.219608, 1)
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_lew3j")
+text = "Appodeal Plugin - Android"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ApdIcon2" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+texture = ExtResource("2_i0wp1")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Congratulations" type="Label" parent="CenterContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_i7y6i")
+text = "Congratulations! You have successfully integrated Appodeal"
+horizontal_alignment = 1
+
+[node name="CoffeeBtn" type="Button" parent="CenterContainer/VBoxContainer/Congratulations"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j2mse")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_j2mse")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_j2mse")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_j2mse")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i843b")
+flat = true
+
+[node name="ConfigPanel" type="Panel" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3k4k5")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/ConfigPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 2
+
+[node name="TestMode" type="CheckButton" parent="CenterContainer/VBoxContainer/ConfigPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 8
+theme_override_constants/h_separation = 13
+theme_override_font_sizes/font_size = 20
+button_pressed = true
+text = "Test Mode"
+
+[node name="AutoCache" type="CheckButton" parent="CenterContainer/VBoxContainer/ConfigPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 8
+theme_override_constants/h_separation = 13
+theme_override_font_sizes/font_size = 20
+button_pressed = true
+text = "Auto Cache"
+
+[node name="COPPA" type="CheckButton" parent="CenterContainer/VBoxContainer/ConfigPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 8
+theme_override_constants/h_separation = 13
+theme_override_font_sizes/font_size = 20
+text = "Child Directed Treatment"
+
+[node name="TestLog" type="RichTextLabel" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(512, 128)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_io0ut")
+bbcode_enabled = true
+scroll_following = true
+
+[node name="InitializeAppodeal" type="Button" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yq4rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ggbka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uw5p7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ggbka")
+disabled = true
+text = "Initialize Appodeal"
+
+[node name="MediationDebugger" type="Button" parent="CenterContainer/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yq4rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ggbka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uw5p7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ggbka")
+disabled = true
+text = "Mediation Debugger"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="InterstitialBtn" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yq4rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ggbka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uw5p7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ggbka")
+disabled = true
+text = "Load Interstitial"
+
+[node name="RewardedBtn" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yq4rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ggbka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uw5p7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ggbka")
+disabled = true
+text = "Load Rewarded"
+
+[node name="BannerBtn" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yq4rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ggbka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uw5p7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ggbka")
+disabled = true
+text = "Banner Ad"
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="PlaceBanner" type="Label" parent="CenterContainer/VBoxContainer/HBoxContainer5"]
+visible = false
+custom_minimum_size = Vector2(128, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_ktmog")
+text = "Place Banner:"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="BannerTop" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer5"]
+custom_minimum_size = Vector2(80, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxFlat_ltix2")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yq4rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ggbka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ltix2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_uw5p7")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_ceqyv")
+text = "Top"
+
+[node name="BannerBottom" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer5"]
+custom_minimum_size = Vector2(80, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxFlat_pbjpc")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yq4rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ggbka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pbjpc")
+theme_override_styles/normal = SubResource("StyleBoxFlat_uw5p7")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_ceqyv")
+text = "Bottom"
+
+[node name="BannerLeft" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer5"]
+custom_minimum_size = Vector2(80, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yq4rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ggbka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uw5p7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_uw5p7")
+text = "Left"
+
+[node name="BannerRight" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer5"]
+custom_minimum_size = Vector2(80, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yq4rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ggbka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uw5p7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_uw5p7")
+text = "Right
+"
+
+[node name="LoadBanner" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer5"]
+visible = false
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yq4rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ggbka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uw5p7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ggbka")
+disabled = true
+text = "Load Banner"
+
+[node name="DestroyBanner" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer5"]
+visible = false
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yq4rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ggbka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uw5p7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ggbka")
+disabled = true
+text = "Destroy"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="AppOpenBtn" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yq4rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ggbka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uw5p7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_yq4rn")
+disabled = true
+text = "Load App Open"
+
+[node name="MRECBtn" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yq4rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ggbka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uw5p7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_yq4rn")
+disabled = true
+text = "Load MREC"
+
+[node name="NativeBtn" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yq4rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ggbka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uw5p7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_yq4rn")
+disabled = true
+text = "Load Native"
+
+[node name="ToastBtn" type="Button" parent="CenterContainer/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Congratulations/CoffeeBtn" to="." method="_on_coffee_btn_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/InitializeAppodeal" to="." method="_on_initialize_appodeal_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/MediationDebugger" to="." method="_on_mediation_debugger_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer2/InterstitialBtn" to="." method="_on_interstitial_btn_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer2/RewardedBtn" to="." method="_on_rewarded_btn_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer2/BannerBtn" to="." method="_on_banner_btn_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer5/BannerTop" to="." method="_on_banner_top_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer5/BannerBottom" to="." method="_on_banner_bottom_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer5/BannerLeft" to="." method="_on_banner_left_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer5/BannerRight" to="." method="_on_banner_right_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer5/LoadBanner" to="." method="_on_load_banner_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer5/DestroyBanner" to="." method="_on_destroy_banner_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer3/AppOpenBtn" to="." method="_on_app_open_btn_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer3/MRECBtn" to="." method="_on_mrec_btn_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer3/NativeBtn" to="." method="_on_native_btn_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ToastBtn" to="." method="_on_toast_btn_pressed"]
