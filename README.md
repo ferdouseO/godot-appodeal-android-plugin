@@ -28,28 +28,29 @@ Use this addon to integrate Appodeal ad mediation to your godot project. Support
 Find the `addons/appodeal/example/scenes/example.tscn` scene for referance use.
 You can use the `addons/appodeal/appodeal_ads.gd` script as a Singletone/Global Script to use all the functionalities of the plugin.
 - Put your Appodeal App key and ad ids in the appodeal_ads.gd file.
+<img height=100 src="screenshots/ss-ids.png">
 
 
 # 📦Export to android
 1. Install Android Build Template
 2. Copy the "godotappodeal.aar" archive from addons/appodeal and pest it to "project > android > build > libs > debug" for debug and to "project > android > build > libs > release" for release build.
 3. Add maven dependency `maven { url "https://artifactory.appodeal.com/appodeal" }` at the repositories section of your "project > android > build > build.gradle" file.
-<img height=100 src="stascreenshotstic/ss-appodeal-maven.png">
+<img height=100 src="screenshots/ss-appodeal-maven.png">
 4. Add `implementation 'com.appodeal.ads:sdk:3.8.0.1'` in the dependency section of your "project > android > build > build.gradle" file.
-<img height=100 src="stascreenshotstic/ss-appodeal-sdk.png">
+<img height=100 src="screenshots/ss-appodeal-sdk.png">
 5. If you add Google admob with appodeal mediation, add your admob application id to the "project > android > build > AndroidManifest.xml" file.
 ```xml
 <meta-data
 	android:name="com.google.android.gms.ads.APPLICATION_ID"
 	android:value="Your Admob Application ID" />
 ```
-<img height=100 src="stascreenshotstic/ss-admob-menifest.png">
+<img height=100 src="screenshots/ss-admob-menifest.png">
 6. Enable `Gradle Build` in your Android export preset.
 
 ## GDPR/User Concent
 
 1. If you use Google UMP for GDPR, Add `implementation 'com.google.android.ump:user-messaging-platform:2.1.0'` in the dependency section of your "project > android > build > build.gradle" file.
-<img height=100 src="ss-admob-ump.png">
+<img height=100 src="screenshots/ss-admob-ump.png">
 
 
 
