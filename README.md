@@ -64,7 +64,7 @@ You can use the `addons/appodeal/appodeal_ads.gd` script as a Singletone/Global 
 If you find my work useful and would like to support...
 
 
-[![buymeacoffee](https://img.shields.io/badge/Buy%20me%20a-coffee-yellow?style=for-the-badge&logo=buymeacoffee)](coff.ee/ferdouse_o)
+[![buymeacoffee](https://img.shields.io/badge/Buy%20me%20a-coffee-yellow?style=for-the-badge&logo=buymeacoffee)](https://coff.ee/ferdouse_o)
 
 
 Your support helps us continue to improve and maintain this plugin. Thank you for being a part of our community!
