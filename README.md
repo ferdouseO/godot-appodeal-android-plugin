@@ -11,8 +11,8 @@ Use this addon to integrate Appodeal ad mediation to your godot project. Support
 # 📦Installation
 ## 📥Godot Asset Library (recommended)
 
-1. Find the Appodeal plugin in the AssetLibrary
-2. Click Download and Install
+1. Find the Appodeal plugin in the AssetLibrary.
+2. Click Download and Install.
 3. Enable the plugin in Project→Project Settings→Plugins.
 
 ## Manual install
@@ -32,7 +32,7 @@ You can use the `addons/appodeal/appodeal_ads.gd` script as a Singletone/Global 
 
 
 # 📦Export to android
-1. Install Android Build Template
+1. Install Android Build Template.
 2. Copy the "godotappodeal.aar" archive from addons/appodeal and pest it to "project > android > build > libs > debug" for debug and to "project > android > build > libs > release" for release build.
 3. Add maven dependency `maven { url "https://artifactory.appodeal.com/appodeal" }` at the repositories section of your "project > android > build > build.gradle" file.
 <img height=100 src="screenshots/ss-appodeal-maven.png">
@@ -54,7 +54,7 @@ You can use the `addons/appodeal/appodeal_ads.gd` script as a Singletone/Global 
 
 # 📦Debug
 1. Connect an android device and run the example scene.
-2. The example app also has a debug window that logs everything
+2. The example app also has a debug window that logs everything.
 <img height=100 src="screenshots/ss-appodeal-bnr.png">
 
 
@@ -72,7 +72,7 @@ If you find my work useful and would like to support...
 [![buymeacoffee](https://img.shields.io/badge/Buy%20me%20a-coffee-yellow?style=for-the-badge&logo=buymeacoffee)](https://coff.ee/ferdouse_o)
 
 
-Your support helps us continue to improve and maintain this plugin. Thank you for being a part of our community!
+Your support helps continue to improve and maintain this plugin. Thank you for being a part of this development!
 
 
 
